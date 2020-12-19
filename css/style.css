@@ -1,0 +1,32 @@
+:root {
+    --primary-color: lightsteelblue;
+    --secondary-color: lightpink;
+    --large: 200px;
+    --small: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+div{
+    background-color: var(--primary-color);
+    width: var(--small);
+    height: var(--small);
+    border-radius: calc( var(--small) / 2);
+    display: inline-block;
+    animation: breath 8s ease infinite none running
+}
+
+@keyframes breath {
+ 25%, 50% {
+    background-color: var(--secondary-color);
+    width: var(--large);
+    height: var(--large);
+    border-radius: calc( var(--large) / 2);
+ }   
+}
