@@ -31,6 +31,12 @@ div{
     animation: breath 8s ease infinite none running
 }
 
+h1,p {
+    color: #6E7B8B;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 @keyframes breath {
  25%, 50% {
     background-color: var(--secondary-color);
