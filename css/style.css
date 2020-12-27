@@ -14,6 +14,14 @@ body {
     align-content: center;
 }
 
+main {
+    height: 300px;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 div{
     background-color: var(--primary-color);
     width: var(--small);
