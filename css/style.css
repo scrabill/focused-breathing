@@ -3,6 +3,7 @@
     --secondary-color: lightpink;
     --large: 200px;
     --small: 10px;
+    --timing: 8s;
 }
 
 body {
@@ -14,12 +15,16 @@ body {
     align-content: center;
 }
 
-main {
+main, section {
     height: 300px;
     width: 100vw;
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+section {
+    height: auto;
 }
 
 div{
@@ -28,10 +33,16 @@ div{
     height: var(--small);
     border-radius: calc( var(--small) / 2);
     display: inline-block;
-    animation: breath 8s ease infinite none running
+    animation: breath var(--timing) ease infinite none running
 }
 
-h1,p {
+input {
+    margin: 20px 0;
+    height: 40px;
+    font-size: 1.25em;
+}
+
+h1,p,input,label {
     color: #6E7B8B;
     font-family: "Work Sans", Arial, Helvetica, sans-serif;
     text-align: center;
